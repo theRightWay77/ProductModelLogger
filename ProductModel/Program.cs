@@ -10,10 +10,9 @@ namespace ProductModel
     {
         public static void Main(string[] args)
         {
-            // Инициализация Serilog для записи логов в файл
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.Console()
-                .WriteTo.File("logfile.txt", rollingInterval: RollingInterval.Day) // Указывает имя файла и частоту обновления (здесь - ежедневно)
+                .WriteTo.File("logfile.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
             
             try
@@ -22,7 +21,7 @@ namespace ProductModel
             }
             finally
             {
-                Log.CloseAndFlush(); // Важно закрыть и сбросить логгер после завершения работы приложения
+                Log.CloseAndFlush(); 
             }
         }
 
@@ -34,8 +33,8 @@ namespace ProductModel
                 })
                 .ConfigureLogging((hostingContext, logging) =>
                 {
-                    logging.ClearProviders(); // Очистите существующие провайдеры журналирования
-                    logging.AddSerilog(); // Добавьте Serilog как провайдера журналирования
+                    logging.ClearProviders(); 
+                    logging.AddSerilog();
                 });
     }
 }
