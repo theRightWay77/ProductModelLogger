@@ -10,11 +10,12 @@ namespace ProductModel
     {
         public static void Main(string[] args)
         {
-            // Инициализация Serilog
+            // Инициализация Serilog для записи логов в файл
             Log.Logger = new LoggerConfiguration()
-                .WriteTo.Console() // или любой другой желаемый вывод
+                .WriteTo.Console()
+                .WriteTo.File("logfile.txt", rollingInterval: RollingInterval.Day) // Указывает имя файла и частоту обновления (здесь - ежедневно)
                 .CreateLogger();
-
+            
             try
             {
                 CreateHostBuilder(args).Build().Run();

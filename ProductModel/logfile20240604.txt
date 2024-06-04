@@ -1,0 +1,112 @@
+2024-06-04 11:35:41.791 +03:00 [INF] User profile is available. Using 'C:\Users\stud\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:35:42.134 +03:00 [INF] Now listening on: http://localhost:5000
+2024-06-04 11:35:42.135 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-04 11:35:42.136 +03:00 [INF] Hosting environment: Development
+2024-06-04 11:35:42.137 +03:00 [INF] Content root path: C:\Users\stud\Desktop\SlanovaRubesh40524\ProductModel-master\ProductModel
+2024-06-04 11:35:42.488 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2024-06-04 11:35:42.533 +03:00 [INF] Executing endpoint 'ProductModel.Controllers.AdminController.AddProduct (ProductModel)'
+2024-06-04 11:35:42.574 +03:00 [INF] Route matched with {action = "AddProduct", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct() on controller ProductModel.Controllers.AdminController (ProductModel).
+2024-06-04 11:35:43.161 +03:00 [WRN] No type was specified for the decimal property 'Cost' on entity type 'ProductDB'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType()', specify precision and scale using 'HasPrecision()' or configure a value converter using 'HasConversion()'.
+2024-06-04 11:35:43.239 +03:00 [INF] Entity Framework Core 5.0.6 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-06-04 11:35:44.258 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:44.284 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:44.288 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:44.289 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:44.308 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-04 11:35:44.323 +03:00 [INF] No migrations were applied. The database is already up to date.
+2024-06-04 11:35:44.338 +03:00 [INF] Executing ViewResult, running view AddProduct.
+2024-06-04 11:35:44.476 +03:00 [INF] Executed ViewResult - view AddProduct executed in 139.2323ms.
+2024-06-04 11:35:44.480 +03:00 [INF] Executed action ProductModel.Controllers.AdminController.AddProduct (ProductModel) in 1904.1739ms
+2024-06-04 11:35:44.481 +03:00 [INF] Executed endpoint 'ProductModel.Controllers.AdminController.AddProduct (ProductModel)'
+2024-06-04 11:35:44.501 +03:00 [INF] Request finished in 2017.7932ms 200 text/html; charset=utf-8
+2024-06-04 11:35:44.534 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink  
+2024-06-04 11:35:44.535 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js  
+2024-06-04 11:35:44.537 +03:00 [INF] Request finished in 2.2383ms 200 application/javascript; charset=utf-8
+2024-06-04 11:35:44.546 +03:00 [INF] Request finished in 12.8541ms 200 text/javascript; charset=UTF-8
+2024-06-04 11:35:56.585 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Home/Index  
+2024-06-04 11:35:56.591 +03:00 [INF] Executing endpoint 'ProductModel.Controllers.HomeController.Index (ProductModel)'
+2024-06-04 11:35:56.594 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProductModel.Controllers.HomeController (ProductModel).
+2024-06-04 11:35:56.598 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-04 11:35:56.607 +03:00 [INF] Executed ViewResult - view Index executed in 9.4677ms.
+2024-06-04 11:35:56.608 +03:00 [INF] Executed action ProductModel.Controllers.HomeController.Index (ProductModel) in 11.0611ms
+2024-06-04 11:35:56.610 +03:00 [INF] Executed endpoint 'ProductModel.Controllers.HomeController.Index (ProductModel)'
+2024-06-04 11:35:56.613 +03:00 [INF] Request finished in 27.5388ms 200 text/html; charset=utf-8
+2024-06-04 11:35:56.638 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink  
+2024-06-04 11:35:56.638 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js  
+2024-06-04 11:35:56.640 +03:00 [INF] Request finished in 2.4616ms 200 application/javascript; charset=utf-8
+2024-06-04 11:35:56.651 +03:00 [INF] Request finished in 13.3579ms 200 text/javascript; charset=UTF-8
+2024-06-04 11:35:57.006 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Product/Index  
+2024-06-04 11:35:57.010 +03:00 [INF] Executing endpoint 'ProductModel.Controllers.ProductController.Index (ProductModel)'
+2024-06-04 11:35:57.013 +03:00 [INF] Route matched with {action = "Index", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProductModel.Controllers.ProductController (ProductModel).
+2024-06-04 11:35:57.017 +03:00 [INF] Entity Framework Core 5.0.6 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-06-04 11:35:57.020 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:57.022 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:57.023 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:57.025 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:57.030 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-04 11:35:57.032 +03:00 [INF] No migrations were applied. The database is already up to date.
+2024-06-04 11:35:57.188 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Cost], [p].[Description], [p].[Name], [p].[URLImage]
+FROM [ProductDBs] AS [p]
+2024-06-04 11:35:57.192 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-04 11:35:57.202 +03:00 [INF] Executed ViewResult - view Index executed in 10.5653ms.
+2024-06-04 11:35:57.203 +03:00 [INF] Executed action ProductModel.Controllers.ProductController.Index (ProductModel) in 187.4882ms
+2024-06-04 11:35:57.204 +03:00 [INF] Executed endpoint 'ProductModel.Controllers.ProductController.Index (ProductModel)'
+2024-06-04 11:35:57.206 +03:00 [INF] Request finished in 199.9529ms 200 text/html; charset=utf-8
+2024-06-04 11:35:57.231 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink  
+2024-06-04 11:35:57.232 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js  
+2024-06-04 11:35:57.234 +03:00 [INF] Request finished in 1.5223ms 200 application/javascript; charset=utf-8
+2024-06-04 11:35:57.238 +03:00 [INF] Request finished in 7.4878ms 200 text/javascript; charset=UTF-8
+2024-06-04 11:35:57.624 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Cart/Index  
+2024-06-04 11:35:57.628 +03:00 [INF] Executing endpoint 'ProductModel.Controllers.CartController.Index (ProductModel)'
+2024-06-04 11:35:57.633 +03:00 [INF] Route matched with {action = "Index", controller = "Cart"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ProductModel.Controllers.CartController (ProductModel).
+2024-06-04 11:35:57.670 +03:00 [INF] Entity Framework Core 5.0.6 initialized 'DatabaseContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2024-06-04 11:35:57.680 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:57.683 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:57.685 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-06-04 11:35:57.687 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-06-04 11:35:57.692 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-06-04 11:35:57.697 +03:00 [INF] No migrations were applied. The database is already up to date.
+2024-06-04 11:35:57.860 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__user_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[User], [t0].[Id], [t0].[Amount], [t0].[CartDBId], [t0].[ProductId], [t0].[Id0], [t0].[Cost], [t0].[Description], [t0].[Name], [t0].[URLImage]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[User]
+    FROM [CartDBs] AS [c]
+    WHERE [c].[User] = @__user_0
+) AS [t]
+LEFT JOIN (
+    SELECT [c0].[Id], [c0].[Amount], [c0].[CartDBId], [c0].[ProductId], [p].[Id] AS [Id0], [p].[Cost], [p].[Description], [p].[Name], [p].[URLImage]
+    FROM [CardDBItems] AS [c0]
+    LEFT JOIN [ProductDBs] AS [p] ON [c0].[ProductId] = [p].[Id]
+) AS [t0] ON [t].[Id] = [t0].[CartDBId]
+ORDER BY [t].[Id], [t0].[Id], [t0].[Id0]
+2024-06-04 11:35:57.865 +03:00 [INF] Executing ViewResult, running view Index.
+2024-06-04 11:35:57.873 +03:00 [INF] Executed ViewResult - view Index executed in 7.7493ms.
+2024-06-04 11:35:57.874 +03:00 [INF] Executed action ProductModel.Controllers.CartController.Index (ProductModel) in 238.2619ms
+2024-06-04 11:35:57.874 +03:00 [INF] Executed endpoint 'ProductModel.Controllers.CartController.Index (ProductModel)'
+2024-06-04 11:35:57.876 +03:00 [INF] Request finished in 252.2994ms 200 text/html; charset=utf-8
+2024-06-04 11:35:57.905 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_framework/aspnetcore-browser-refresh.js  
+2024-06-04 11:35:57.905 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/_vs/browserLink  
+2024-06-04 11:35:57.906 +03:00 [INF] Request finished in 1.1654ms 200 application/javascript; charset=utf-8
+2024-06-04 11:35:57.913 +03:00 [INF] Request finished in 8.4056ms 200 text/javascript; charset=UTF-8
